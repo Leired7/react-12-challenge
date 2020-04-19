@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TabSelector />
+        <TabSelector selectedTab={this.state.activeId} />
         <div className="App-content">{this.getTabContent()}</div>
       </div>
     );
