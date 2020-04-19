@@ -27,6 +27,10 @@ class App extends Component {
     switch (this.state.activeId) {
       case "home":
         return <Home />;
+      case "about":
+        return <About />;
+      case "contact":
+        return <Contact />;
       default:
         return <Error />;
     }
