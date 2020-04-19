@@ -35,7 +35,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TabSelector selectedTab={this.state.activeId} />
+        <TabSelector
+          selectedTab={this.state.activeId}
+          handleChangeTab={(event) => this.handleChangeTab(event)}
+        />
         <div className="App-content">{this.getTabContent()}</div>
       </div>
     );

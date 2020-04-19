@@ -7,21 +7,21 @@ class TabSelector extends Component {
       <div className="TabSelector">
         <button
           id="home"
-          onClick={this.handleChangeTab}
+          onClick={(event) => this.props.handleChangeTab(event)}
           className={activeId === "home" ? "active" : ""}
         >
           Home
         </button>
         <button
           id="about"
-          onClick={this.handleChangeTab}
+          onClick={(event) => this.props.handleChangeTab(event)}
           className={activeId === "about" ? "active" : ""}
         >
           About
         </button>
         <button
           id="contact"
-          onClick={this.handleChangeTab}
+          onClick={(event) => this.props.handleChangeTab(event)}
           className={activeId === "contact" ? "active" : ""}
         >
           Contact
